@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+        body {
+      background-color: #DEB887;
+
+    }
+
+        header h {
+            text-align: center;
+            padding: 1rem;
+            font-size: 10vh;
+            color: #6C3428;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container2 {
+            max-width: 800px;
+            margin: auto;
+            padding: 2rem;
+            background-color: #DEB887;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            margin-bottom: 16px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #990000;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        footer {
+      background-color: #6C3428;
+      color: #FFFFFF;
+      clear: both;
+      text-align: center;
+      padding: 0.5rem;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h><B>DELIVERY</B></h>
+    </header>
+    <div class="container2">
+        <h1>สั่งซื้อดอกไม้</h1>
+        <form action="submit_order.php" method="post">
+            <label for="flower">ชนิดของดอกไม้:</label>
+            <select id="flower" name="flower">
+                <option value="white rose">B1: White Rose</option>
+                <option value="tulip">B2: Tulip</option>
+                <option value="daisy">B3: Daisy</option>
+                <option value="sun flower">B4: Sun Flower</option>
+                <option value="red rose">B5: Red Rose</option>
+                <option value="caspia">B6: Caspia</option>
+                <option value="green rose">B7: Green Rose</option>
+                <option value="lily">B8 : Lily</option>
+                <option value="carnation">B9: Carnation</option>
+                <option value="forget me not">B10: Forget me not</option>
+                <option value="gypso">B11: Gypso</option>
+                <option value="hydrangea">B12: Hydrangea</option>
+                <option value="white rose1">B13: White RoseV.1</option>
+                <option value="tulip1">B14: TulipV.1</option>
+                <option value="daisy1">B15: DaisyV.1</option>
+                <option value="red rose1">B16: Red RoseV.1</option>
+            </select>
+            <label for="quantity">จำนวน:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label for="delivery">วันที่จัดส่ง:</label>
+            <input type="date" id="delivery" name="delivery" required>
+
+            <label for="name">ชื่อ:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">ที่อยู่:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="phone">เบอร์โทรติดต่อ:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+            <button type="submit">สั่งซื้อ</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2023 Flowers Bouquet. All rights reserved.</p>
+      </footer>
+</body>
+
+</html>

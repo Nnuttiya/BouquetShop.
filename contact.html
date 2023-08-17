@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+      background-color: #DEB887;
+
+    }
+
+        header h {
+            font-size: 10vh;
+            color: #6C3428;
+            text-align: left;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background-color: #DEB887;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+        .contact-form {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+        }
+
+        .contact-form button {
+            background-color: #990000;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+        footer {
+      background-color: #6C3428;
+      color: #FFFFFF;
+      clear: both;
+      text-align: center;
+      padding: 5px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h><B>CONTACT US</B></h>
+    </header>
+    <div class="container">
+        <div class="contact-form">
+            <h>สอบถามข้อมูลเพิ่มเติม</h>
+            <form action="submit_form.php" method="post">
+                <label for="name">ชื่อ:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">ข้อความ:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">ส่งข้อความ</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>© 2023 Flowers Bouquet. All rights reserved.</p>
+      </footer>
+</body>
+</html>
